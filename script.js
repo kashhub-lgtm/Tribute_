@@ -465,6 +465,12 @@ function initFinalSurprise() {
     finalSurprise.classList.add("show");
     createFlowers(flowersContainer, 28);
     newGiftBtn.style.display = "none";
+
+    // Reveal next button in top controls
+    const nextBtn = document.getElementById("nextPageBtn");
+    if (nextBtn) {
+      nextBtn.style.visibility = "visible";
+    }
   });
 }
 
